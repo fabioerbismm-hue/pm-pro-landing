@@ -1,1 +1,12 @@
-export default function FinalCTA(){return <section className="section relative overflow-hidden"><div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_50%,rgba(41,169,236,.25),transparent_35%)]"/><div className="container relative text-center"><h2 className="display mx-auto max-w-5xl text-5xl font-bold sm:text-7xl">Puoi continuare ad aspettare il prossimo passaparola. Oppure costruire un processo.</h2><p className="mx-auto mt-6 max-w-2xl text-lg text-muted">Raccontaci dove operi, quanti immobili gestisci e dove vuoi arrivare. Valuteremo se PM Pro può avere senso per la tua struttura.</p><a href="#candidatura" className="btn btn-primary mt-8">Verifica la compatibilità</a><p className="mt-3 text-sm text-muted">Richiede circa 2 minuti.</p></div></section>}
+export default function FinalCTA() {
+  return <section className="section relative overflow-hidden">
+    <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_50%,rgba(41,169,236,.25),transparent_35%)]" />
+    <div className="container relative text-center">
+      <p className="eyebrow mb-5">PM PRO · BY EVOLUTION MEDIA GROUP</p>
+      <h2 className="display mx-auto max-w-5xl text-5xl font-bold sm:text-7xl">Puoi continuare ad aspettare il prossimo passaparola. Oppure costruire un processo.</h2>
+      <p className="mx-auto mt-6 max-w-2xl text-lg text-muted">Raccontaci dove operi, quanti immobili gestisci e dove vuoi arrivare. Valuteremo se PM Pro può avere senso per la tua struttura.</p>
+      <a href="#candidatura" className="btn btn-primary mt-8">Verifica la compatibilità</a>
+      <p className="mt-3 text-sm text-muted">Richiede circa 2 minuti.</p>
+    </div>
+  </section>;
+}

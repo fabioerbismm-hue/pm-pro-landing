@@ -3,7 +3,7 @@ import { ArrowUpRight, Layers3 } from "lucide-react";
 
 export default function EvolutionOrigin() {
   return (
-    <section className="section" aria-labelledby="evolution-origin-title">
+    <section id="founder" className="section" aria-labelledby="evolution-origin-title">
       <div className="container">
         <div className="glass relative overflow-hidden rounded-[2rem] p-7 sm:p-10 lg:p-14">
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-sky/10 blur-3xl" />

@@ -16,12 +16,15 @@ export default function FounderSection() {
         </div>
 
         <div>
-          <p className="eyebrow">COSTRUITO DA UN PROPERTY MANAGER</p>
+          <p className="eyebrow">L’ESPERIENZA PROPERTY DI PM PRO</p>
           <h2 className="display mt-4 text-5xl font-bold sm:text-6xl">
             Luca conosce il problema perché non lo ha studiato da fuori.
           </h2>
           <div className="mt-7 space-y-5 text-lg leading-8 text-muted">
-            <p>PM Pro nasce dall’esperienza sul campo di Luca Ciovati.</p>
+            <p>
+              PM Pro nasce dall’esperienza sul campo di Luca Ciovati e dalla competenza di Mirko
+              Sorrentino ed Evolution Media Group nella costruzione di processi di acquisizione.
+            </p>
             <p>
               Gestire immobili, proprietari, ospiti e collaboratori è una parte del lavoro. L’altra,
               spesso più trascurata, è costruire un flusso costante di nuovi immobili da valutare.
@@ -37,7 +40,7 @@ export default function FounderSection() {
               “Non volevo creare un altro servizio che consegnasse lead. Volevo costruire il passaggio
               che manca tra una campagna e un vero appuntamento.”
             </p>
-            <footer className="mt-4 text-sm text-gold">Luca Ciovati · Founder PM Pro</footer>
+            <footer className="mt-4 text-sm text-gold">Luca Ciovati · Co-founder PM Pro</footer>
           </blockquote>
         </div>
       </div>
