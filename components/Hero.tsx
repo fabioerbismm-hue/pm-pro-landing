@@ -1,22 +1,7 @@
 "use client";
 
-import { ArrowDown, Play } from "lucide-react";
-import { track } from "./Tracking";
+import Image from "next/image";
+import {Check,Play} from "lucide-react";
+import {track} from "./Tracking";
 
-export default function Hero() {
-  return <section id="top" className="relative flex min-h-screen items-center overflow-hidden pt-20">
-    <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_35%,rgba(41,169,236,.20),transparent_35%),linear-gradient(110deg,#041126_35%,rgba(4,17,38,.78))]" />
-    <div className="absolute right-[8%] top-[21%] h-80 w-80 rounded-full border border-sky/20 opacity-70 shadow-[0_0_100px_rgba(41,169,236,.14)]" />
-    <div className="container relative z-10 py-24">
-      <div className="mb-6 flex flex-wrap items-center gap-3">
-        <p className="eyebrow">PER PROPERTY MANAGER GIÀ OPERATIVI</p>
-        <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-bold uppercase tracking-[.14em] text-muted">PM Pro by Evolution Media Group</span>
-      </div>
-      <h1 className="display max-w-4xl text-5xl font-bold leading-[.98] sm:text-7xl lg:text-8xl">Non ti servono altri lead.<br />Ti servono <span className="bg-gradient-to-r from-sky to-blue bg-clip-text text-transparent">appuntamenti</span> che abbiano senso.</h1>
-      <p className="mt-7 max-w-2xl text-lg leading-8 text-muted">PM Pro intercetta, contatta e qualifica proprietari potenzialmente interessati alla gestione professionale. Tu entri quando esiste una conversazione concreta da affrontare.</p>
-      <div className="mt-9 flex flex-col gap-3 sm:flex-row"><a className="btn btn-primary" href="#candidatura" onClick={() => track("hero_cta_click")}>Verifica se PM Pro è adatto a te</a><a className="btn btn-ghost" href="#processo"><Play size={17} />Guarda come funziona</a></div>
-      <p className="mt-4 text-sm text-muted">Non vendiamo database. Valutiamo prima la compatibilità con la tua struttura.</p>
-    </div>
-    <a href="#problema" className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 animate-bounce text-muted sm:block" aria-label="Scorri alla sezione successiva"><ArrowDown /></a>
-  </section>;
-}
+export default function Hero(){return <section id="top" className="relative flex min-h-screen items-center overflow-hidden pt-20"><div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_40%,rgba(41,169,236,.25),transparent_30%),linear-gradient(110deg,#041126_35%,#071a32)]"/><div className="container relative z-10 grid items-center gap-12 py-20 lg:grid-cols-[1.2fr_.8fr]"><div><div className="mb-6 flex flex-wrap items-center gap-3"><p className="eyebrow">PER PROPERTY MANAGER GIÀ OPERATIVI</p><span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-bold uppercase tracking-[.14em] text-muted">PM Pro by Evolution Media</span></div><h1 className="display max-w-4xl text-5xl font-bold leading-[.98] sm:text-7xl lg:text-8xl">Non altri lead.<br/><span className="text-emerald-400">Appuntamenti qualificati.</span></h1><p className="mt-7 max-w-2xl text-lg leading-8 text-muted">Troviamo proprietari, li contattiamo e verifichiamo se esistono le condizioni per parlare. Tu intervieni sulla conversazione, non sul file Excel.</p><div className="mt-7 flex flex-wrap gap-3 text-sm">{["Primo contatto gestito","Requisiti verificati","Contesto già raccolto"].map(x=><span key={x} className="flex items-center gap-2 rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-emerald-100"><Check size={16} className="text-emerald-400"/>{x}</span>)}</div><div className="mt-9 flex flex-col gap-3 sm:flex-row"><a className="btn btn-primary" href="#candidatura" onClick={()=>track("hero_cta_click")}>Verifica la tua struttura</a><a className="btn btn-ghost" href="#processo"><Play size={17}/>Come funziona</a></div></div><div className="relative mx-auto w-full max-w-md"><div className="absolute -inset-5 rounded-[2.5rem] bg-sky/15 blur-2xl"/><div className="glass relative overflow-hidden rounded-[2rem] border-sky/30"><div className="relative aspect-[4/5]"><Image src="/images/founders/luca-ciovati.webp" alt="Luca Ciovati, co-founder di PM Pro" fill priority className="object-cover" sizes="(max-width:1024px) 90vw, 36vw"/></div><div className="absolute inset-x-4 bottom-4 rounded-2xl border border-white/15 bg-ink/85 p-4 backdrop-blur"><p className="text-xs font-bold uppercase tracking-[.14em] text-emerald-400">LO HAI VISTO NELL’AD</p><p className="display mt-1 text-2xl font-bold">Luca Ciovati</p><p className="text-sm text-muted">Co-founder PM Pro · Property manager</p></div></div></div></div></section>}
