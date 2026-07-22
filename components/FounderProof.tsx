@@ -74,12 +74,12 @@ export default function FounderProof() {
           </figure>
 
           <figure className="glass overflow-hidden rounded-3xl">
-            <div className="relative aspect-square bg-[#fff5d9]">
+            <div className="relative aspect-[2/3] bg-[#fff5d9]">
               <Image
                 src="/images/social-proof/superhost.jpg"
                 alt="Comunicazione del riconoscimento Superhost ricevuto da Luca"
                 fill
-                className="object-cover object-top"
+                className="object-contain"
                 sizes="(max-width: 1024px) 100vw, 42vw"
               />
             </div>
