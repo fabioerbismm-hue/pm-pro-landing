@@ -1,4 +1,5 @@
-import { ArrowUpRight, Layers3, Megaphone, Users } from "lucide-react";
+import Image from "next/image";
+import { ArrowUpRight, Layers3, Users } from "lucide-react";
 
 export default function EvolutionOrigin() {
   return (
@@ -44,9 +45,21 @@ export default function EvolutionOrigin() {
                 </p>
               </article>
               <article className="rounded-2xl border border-gold/25 bg-gold/5 p-6">
-                <Megaphone className="text-gold" aria-hidden="true" />
-                <p className="eyebrow mt-6">CO-FOUNDER · ACQUISITION</p>
-                <h3 className="display mt-2 text-3xl font-bold">Mirko Sorrentino</h3>
+                <div className="flex items-center gap-5">
+                  <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-2xl border border-gold/30 bg-white">
+                    <Image
+                      src="/images/founders/mirko-sorrentino.webp"
+                      alt="Mirko Sorrentino, co-founder di PM Pro"
+                      fill
+                      className="object-cover"
+                      sizes="96px"
+                    />
+                  </div>
+                  <div>
+                    <p className="eyebrow">CO-FOUNDER · ACQUISITION</p>
+                    <h3 className="display mt-2 text-3xl font-bold">Mirko Sorrentino</h3>
+                  </div>
+                </div>
                 <p className="mt-3 leading-7 text-muted">
                   Founder di Evolution Media Groups: porta strategia, marketing e costruzione dei
                   processi di acquisizione per il mercato immobiliare.
