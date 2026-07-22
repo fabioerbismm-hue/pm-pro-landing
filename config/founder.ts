@@ -9,4 +9,8 @@ export const founder = {
   founderQuote: "Un property manager non ha bisogno di altri nomi da chiamare. Ha bisogno di parlare con proprietari che abbiano davvero qualcosa da valutare.",
   founderImage: "", // TODO: fotografia reale di Luca
   founderVideoUrl: "", // TODO: video reale di Luca
+  coFounderName: "Mirko Sorrentino",
+  coFounderRole: "Co-founder PM Pro · Founder Evolution Media Groups",
+  coFounderCompany: "Evolution Media Groups",
+  coFounderUrl: "https://evolutionmediagroups.com/evolution-media",
 } as const;
