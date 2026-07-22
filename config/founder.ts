@@ -10,7 +10,7 @@ export const founder = {
   founderImage: "", // TODO: fotografia reale di Luca
   founderVideoUrl: "", // TODO: video reale di Luca
   coFounderName: "Mirko Sorrentino",
-  coFounderRole: "Co-founder PM Pro · Founder Evolution Media Groups",
-  coFounderCompany: "Evolution Media Groups",
+  coFounderRole: "Co-founder PM Pro · Founder Evolution Media Group",
+  coFounderCompany: "Evolution Media Group",
   coFounderUrl: "https://evolutionmediagroups.com/evolution-media",
 } as const;
