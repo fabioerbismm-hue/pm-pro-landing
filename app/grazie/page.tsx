@@ -1,5 +1,6 @@
 import type {Metadata} from "next";
 import Link from "next/link";
+import {MetaLeadEvent} from "@/components/MetaLeadEvent";
 
 export const metadata:Metadata={
   title:"Candidatura ricevuta | PM Pro",
@@ -9,6 +10,7 @@ export const metadata:Metadata={
 
 export default function ThankYouPage(){
   return <main className="relative min-h-screen overflow-hidden bg-ink px-5 py-10 text-white sm:px-8 sm:py-16">
+    <MetaLeadEvent/>
     <div className="pointer-events-none absolute inset-x-0 top-0 h-96 bg-[radial-gradient(circle_at_top,rgba(36,169,225,.18),transparent_65%)]"/>
     <div className="relative mx-auto max-w-5xl">
       <Link href="/" className="display inline-flex items-center gap-3 text-xl font-bold tracking-tight" aria-label="Torna alla home di PM Pro">
