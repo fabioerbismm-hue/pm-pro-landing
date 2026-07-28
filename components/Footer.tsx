@@ -30,21 +30,34 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-5 text-sm text-muted">
-            <a
-              href="https://www.iubenda.com/privacy-policy/39457603"
-              className={iubendaLinkClass}
-              title="Privacy Policy"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="https://www.iubenda.com/privacy-policy/39457603/cookie-policy"
-              className={iubendaLinkClass}
-              title="Cookie Policy"
-            >
-              Cookie Policy
-            </a>
+          <div className="flex flex-col gap-4 text-sm text-muted sm:items-end">
+            <div className="flex flex-wrap gap-x-5 gap-y-2">
+              <a href="tel:+393315075528" className="hover:text-white">
+                331 507 5528
+              </a>
+              <a
+                href="mailto:info@pmproitalia.com"
+                className="hover:text-white"
+              >
+                info@pmproitalia.com
+              </a>
+            </div>
+            <div className="flex flex-wrap gap-5">
+              <a
+                href="https://www.iubenda.com/privacy-policy/39457603"
+                className={iubendaLinkClass}
+                title="Privacy Policy"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="https://www.iubenda.com/privacy-policy/39457603/cookie-policy"
+                className={iubendaLinkClass}
+                title="Cookie Policy"
+              >
+                Cookie Policy
+              </a>
+            </div>
           </div>
         </div>
 
