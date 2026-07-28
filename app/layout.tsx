@@ -53,6 +53,11 @@ export default function RootLayout({
           src="https://cdn.iubenda.com/iubenda.js"
           strategy="afterInteractive"
         />
+        <Script
+          id="iubenda-cookie-widget"
+          src="https://embeds.iubenda.com/widgets/b568399a-c1e4-4170-a858-9c097503c9a7.js"
+          strategy="afterInteractive"
+        />
 
         <noscript>
           <img
