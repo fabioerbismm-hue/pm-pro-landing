@@ -34,6 +34,10 @@ export default function ThankYouPage(){
       <div className="mx-auto mt-8 max-w-2xl text-center">
         <p className="leading-7 text-muted">Il team analizzerà le informazioni inviate e ti ricontatterà se ci sono i presupposti per un confronto.</p>
         <Link href="/" className="mt-7 inline-flex text-sm font-bold text-sky hover:underline">Torna al sito PM Pro</Link>
+        <div className="mt-8 flex justify-center gap-5 text-xs text-muted">
+          <a href="https://www.iubenda.com/privacy-policy/39457603" className="iubenda-white iubenda-noiframe iubenda-embed hover:text-white" title="Privacy Policy">Privacy Policy</a>
+          <a href="https://www.iubenda.com/privacy-policy/39457603/cookie-policy" className="iubenda-white iubenda-noiframe iubenda-embed hover:text-white" title="Cookie Policy">Cookie Policy</a>
+        </div>
       </div>
     </div>
   </main>;

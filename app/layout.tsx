@@ -48,6 +48,11 @@ export default function RootLayout({
             fbq('track','PageView');
           `}
         </Script>
+        <Script
+          id="iubenda-embed"
+          src="https://cdn.iubenda.com/iubenda.js"
+          strategy="afterInteractive"
+        />
 
         <noscript>
           <img
