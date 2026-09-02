@@ -12,5 +12,5 @@ export const founder = {
   coFounderName: "Mirko Sorrentino",
   coFounderRole: "Co-founder PM Pro · Founder Evolution Media Group",
   coFounderCompany: "Evolution Media Group",
-  coFounderUrl: "https://evolutionmediagroups.com/evolution-media",
+  coFounderUrl: "https://home.evolutionmediagroups.com/",
 } as const;

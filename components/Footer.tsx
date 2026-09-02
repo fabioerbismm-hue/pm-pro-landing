@@ -20,7 +20,7 @@ export default function Footer() {
             <div>
               <p className="font-bold">PM Pro</p>
               <a
-                href="https://evolutionmediagroups.com/evolution-media"
+                href="https://home.evolutionmediagroups.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="text-xs text-muted hover:text-white"
