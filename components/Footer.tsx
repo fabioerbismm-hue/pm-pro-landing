@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Instagram } from "lucide-react";
 import {site} from "@/config/site";
 
 const iubendaLinkClass =
@@ -32,6 +33,16 @@ export default function Footer() {
 
           <div className="flex flex-col gap-4 text-sm text-muted sm:items-end">
             <div className="flex flex-wrap gap-x-5 gap-y-2">
+              <a
+                href="https://www.instagram.com/pmproitalia/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Segui PM Pro Italia su Instagram"
+                className="inline-flex items-center gap-2 hover:text-white"
+              >
+                <Instagram size={18} aria-hidden="true" />
+                <span>@pmproitalia</span>
+              </a>
               <a href="tel:+393315075528" className="hover:text-white">
                 331 507 5528
               </a>
