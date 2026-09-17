@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Menu, X } from "lucide-react";
+import { Instagram, Menu, X } from "lucide-react";
 import { useState } from "react";
 import { track } from "./Tracking";
 
@@ -18,9 +18,13 @@ export default function Navbar() {
         </a>
         <nav className="hidden items-center gap-7 md:flex">
           {links.map(([label, href]) => <a key={href} href={href} className="text-sm text-muted hover:text-white">{label}</a>)}
+          <a href="https://www.instagram.com/pmproitalia/" target="_blank" rel="noreferrer" aria-label="Segui PM Pro Italia su Instagram" className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white transition hover:border-fuchsia-400/60 hover:bg-fuchsia-400/10 hover:text-fuchsia-300"><Instagram size={20} aria-hidden="true" /></a>
           <a href="#candidatura" onClick={() => track("hero_cta_click", { position: "navbar" })} className="btn btn-primary text-sm">Verifica la tua struttura</a>
         </nav>
-        <button className="md:hidden" onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Apri menu">{open ? <X /> : <Menu />}</button>
+        <div className="flex items-center gap-3 md:hidden">
+          <a href="https://www.instagram.com/pmproitalia/" target="_blank" rel="noreferrer" aria-label="Segui PM Pro Italia su Instagram" className="flex h-10 w-10 items-center justify-center rounded-full border border-white/15 bg-white/5 text-white"><Instagram size={20} aria-hidden="true" /></a>
+          <button onClick={() => setOpen(!open)} aria-expanded={open} aria-label="Apri menu">{open ? <X /> : <Menu />}</button>
+        </div>
       </div>
       {open && <nav className="container grid gap-5 border-t border-white/10 py-6 md:hidden">{links.map(([label, href]) => <a key={href} href={href} onClick={() => setOpen(false)}>{label}</a>)}</nav>}
     </header>
