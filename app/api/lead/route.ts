@@ -3,7 +3,7 @@ import {leadSchema} from "@/config/form";
 import {createHash, randomUUID} from "node:crypto";
 
 const DEFAULT_LEAD_WEBHOOK_URL =
-  "https://script.google.com/macros/s/AKfycbyE5OOWPVtf2D6e7_8piCMi_mZwBLPFacPEVLQrL6TB7WR00AR7Gy5c_WvUlhjvIkM/exec";
+  "https://script.google.com/macros/s/AKfycbzFpvy-OsiZ9iLReKUFXtZOXifz2yNV9KCVYXPcEfYwJjqjz_LmUNwkO5OqghAhr84/exec";
 
 const hits = new Map<string, {count: number; reset: number}>();
 
@@ -137,6 +137,10 @@ export async function POST(request: Request) {
     });
 
     if (!response.ok) throw new Error();
+    const webhookResult = await response.json() as {ok?: boolean; error?: string};
+    if (webhookResult.ok !== true) {
+      throw new Error(webhookResult.error || "Webhook non riuscito");
+    }
 
     try {
       await sendMetaLead({
