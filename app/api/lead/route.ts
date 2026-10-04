@@ -121,7 +121,7 @@ export async function POST(request: Request) {
     submittedAt: new Date().toISOString(),
     ip,
   };
-  const url = process.env.LEAD_WEBHOOK_URL || DEFAULT_LEAD_WEBHOOK_URL;
+  const url = DEFAULT_LEAD_WEBHOOK_URL;
 
   try {
     const response = await fetch(url, {
