@@ -30,7 +30,7 @@ async function sendMetaLead({
   const token = process.env.META_CAPI_ACCESS_TOKEN;
   if (!token) return;
 
-  const pixelId = process.env.META_PIXEL_ID || "2483298032196925";
+  const pixelId = process.env.META_PIXEL_ID || "2056989268279443";
   const version = process.env.META_GRAPH_API_VERSION || "v23.0";
   const normalizedPhone = lead.phone.replace(/\D/g, "");
   const userData: Record<string, string | string[]> = {
