@@ -25,6 +25,7 @@ const lessons: Lesson[] = [
   {id:"3639997c0c3640babc078b2a0f04a050",module:"Modulo 7 · Numeri e redditività",title:"Numeri e caso redditività — Parte 1",duration:"13 min"},
   {id:"0f183979692742a1bb6d0dfbce791cbf",module:"Modulo 7 · Numeri e redditività",title:"Numeri e caso redditività — Parte 2",duration:"43 min"},
   {id:"0ab4b17a96dd49b0aaf6734866f83181",module:"Modulo 8",title:"Canali per acquisire immobili — Parte 1",duration:"38 min"},
+  {id:"184fc6470bbf41a681c869d3a694209d",module:"Modulo 8",title:"Canali per acquisire immobili — Parte 2",duration:"20 min"},
 ];
 
 export default async function TrainingPage() {
