@@ -26,6 +26,20 @@ const lessons: Lesson[] = [
   {id:"0f183979692742a1bb6d0dfbce791cbf",module:"Modulo 7 · Numeri e redditività",title:"Numeri e caso redditività — Parte 2",duration:"43 min"},
   {id:"0ab4b17a96dd49b0aaf6734866f83181",module:"Modulo 8",title:"Canali per acquisire immobili — Parte 1",duration:"38 min"},
   {id:"184fc6470bbf41a681c869d3a694209d",module:"Modulo 8",title:"Canali per acquisire immobili — Parte 2",duration:"20 min"},
+  {id:"cb4196f1739a437195f4304283e6434e",module:"Modulo 9 · La trattativa",title:"La trattativa con il proprietario — Parte 1",duration:"42 min"},
+  {id:"e35ac28d7c734f24bc4d9327e8951b54",module:"Modulo 9 · La trattativa",title:"La trattativa con il proprietario — Parte 2",duration:"21 min"},
+  {id:"81ba36bb70814b23919219c1452dab75",module:"Modulo 10 · Condominio e affitti brevi",title:"Condominio e affitti brevi — Parte 1",duration:"29 min"},
+  {id:"1ffa2aa1ed4147728494cd58665af95d",module:"Modulo 10 · Condominio e affitti brevi",title:"Condominio e affitti brevi — Parte 2",duration:"18 min"},
+  {id:"972625812cae46d39f4fcb2e383b69df",module:"Modulo 10 · Condominio e affitti brevi",title:"Condominio e affitti brevi — Parte 3",duration:"10 min"},
+  {id:"099f5dfeac714610bad70207bee0d979",module:"Modulo 11",title:"Sopralluogo e due diligence",duration:"1 h 11 min"},
+  {id:"f1cc6ce6e5724f4d8e07c1c360398e35",module:"Modulo 12",title:"Da appartamento vergine a prodotto per affitti brevi",duration:"55 min"},
+  {id:"aa408e6f454c4c48bc45f7f042c7b5f8",module:"Modulo 13 · OTA",title:"Airbnb e Booking — Parte 1",duration:"Durata non disponibile"},
+  {id:"6fe9c55b082440a6b6f748a6851e5aac",module:"Modulo 13 · OTA",title:"Airbnb e Booking — Parte 2",duration:"15 min"},
+  {id:"a0e1f9251e024a4ea2c27c89db566c2a",module:"Modulo 14 · Channel manager",title:"Channel manager — Parte 1",duration:"Durata non disponibile"},
+  {id:"a4ce5cbc3f5b41c69163ead1796a3be6",module:"Modulo 14 · Channel manager",title:"Channel manager — Parte 2",duration:"29 min"},
+  {id:"fe2cb31c5bd5464a914daa58c6de4ada",module:"Modulo 15 · Gestione operativa",title:"Gestione operativa e customer experience — Parte 1",duration:"28 min"},
+  {id:"ff72eda9c46e49599a5d7d77ea630bf",module:"Modulo 15 · Gestione operativa",title:"Gestione operativa e customer experience — Parte 2",duration:"Durata non disponibile"},
+  {id:"44f4177193da4d209fc92a35bee604d0",module:"Modulo 16",title:"Controllo economico e KPI per affitti brevi + esercizio pratico",duration:"49 min"},
 ];
 
 export default async function TrainingPage() {
